@@ -38,6 +38,7 @@ public class AuthMiddleware : Middleware
 public class RequestValidationMiddleware : Middleware
 {
     public RequestValidationMiddleware(Middleware next) => this.next = next;
+    public RequestValidationMiddleware() => this.next = null;
 
     public override bool Invoke(UserRequest request)
     {
@@ -75,7 +76,6 @@ public class TestApiController
     }
 }
 
-
 public class ChainOfResponsibility : ICodeTemplate
 {
     private readonly TestApiController controller;
@@ -84,7 +84,7 @@ public class ChainOfResponsibility : ICodeTemplate
     public ChainOfResponsibility()
     {
         this.controller = new TestApiController();
-        this.middleware = new AuthMiddleware(new RequestValidationMiddleware(null));
+        this.middleware = new AuthMiddleware(new RequestValidationMiddleware());
     }
 
     private void MakeApiCall(UserRequest request) =>
