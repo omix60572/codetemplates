@@ -8,10 +8,11 @@ public static class Program
     {
         // BehaviorPatterns:
         // ChainOfResponsibility
+        // Command
         // Iterator
 
         // Define template to run
-        var template = new Iterator();
+        var template = new Command();
         template.Run();
     }
 }
