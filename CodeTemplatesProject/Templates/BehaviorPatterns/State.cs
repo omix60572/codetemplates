@@ -120,7 +120,7 @@ public class BankAccount
         this.MinBalance = minBalance;
         this.state = balance > 0 ? new PositiveState() : new NegativeState();
 
-        var accountType = minBalance < 0 ? "credit" : "standart";
+        var accountType = minBalance < 0 ? "credit" : "standard";
         Console.WriteLine($"Bank account created, current balance: {this.Balance:C}, min balance value: {this.MinBalance:C}, account type: [{accountType}]");
     }
 
