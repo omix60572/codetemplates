@@ -10,9 +10,10 @@ public static class Program
         // ChainOfResponsibility
         // Command
         // Iterator
+        // State
 
         // Define template to run
-        var template = new Command();
+        var template = new State();
         template.Run();
     }
 }
