@@ -1,4 +1,4 @@
-﻿using CodeTemplatesProject.Templates.BehaviorPatterns;
+﻿using CodeTemplatesProject.Templates.FactoryPatterns;
 
 namespace CodeTemplatesProject;
 
@@ -12,8 +12,11 @@ public static class Program
         // Iterator
         // State
 
+        // FactoryPatterns:
+        // Factory
+
         // Define template to run
-        var template = new State();
+        var template = new Factory();
         template.Run();
     }
 }
