@@ -36,7 +36,7 @@ public class LogBuilder
     public LogBuilder WithProperty(string key, string value)
     {
         if (this.properties.ContainsKey(key))
-            throw new ArgumentException("Dublicated key provided");
+            throw new ArgumentException("Duplicated key provided");
 
         this.properties[key] = value;
         return this;
