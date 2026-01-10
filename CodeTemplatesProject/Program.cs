@@ -14,9 +14,11 @@ public static class Program
 
         // FactoryPatterns:
         // Factory
+        // Builder
+        // Singleton
 
         // Define template to run
-        var template = new Factory();
+        var template = new Builder();
         template.Run();
     }
 }
