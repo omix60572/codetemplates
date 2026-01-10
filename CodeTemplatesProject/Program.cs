@@ -18,7 +18,7 @@ public static class Program
         // Singleton
 
         // Define template to run
-        var template = new Builder();
+        var template = new Singleton();
         template.Run();
     }
 }
